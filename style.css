@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+}
+
+header div {
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    color: rgb(154, 181, 189);
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: "Playwrite AU SA", cursive;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff;
+    }
+}
+
+header button a {
+    position: absolute;
+    display: inline-block;
+    top: 60%;
+    left: 23%;
+    color: rgb(154, 181, 189);
+    background: rgb(25, 25, 127);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    box-shadow: none;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    border-style: none;
+}
+
+header button a:hover {
+    box-shadow: 0 0 1rem rgb(154, 181, 189);
+    transition: .3s ease;
+}
+
+header button a:visited{
+    color: rgb(154, 181, 189);
+    background: rgb(25, 25, 127);
+    text-decoration: none;
+}

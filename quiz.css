@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header .container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 36%;
+    height: 100%;
+}
+
+header .content {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
+
+header h1 {
+    position: absolute;
+    color: blueviolet;
+    top: 40px;
+    left: 40px;
+    font-size: 3rem;
+}
+
+header h3 {
+    position: absolute;
+    color: rgb(12, 92, 12);
+    top: 100px;
+    left: 24%;
+}
+
+.content .btn {
+    font-weight: 500;
+    width: 70%;
+    box-shadow: 0 0 1rem rgb(196, 199, 208);
+    border: 1px solid rgb(72, 72, 153);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content .btn:hover:not([disabled]) {
+    color: rgb(199, 212, 216);
+    background: rgba(9, 19, 81, 0.929);
+}
+
+.content .btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    color: whitesmoke;
+    background: rgba(9, 19, 81, 0.929);
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+    margin-left: 25%;
+}
+
+.correct {
+    background: rgb(44, 113, 64);
+}
+
+.incorrect {
+    background: rgb(160, 93, 93);
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    header .content {
+        top: 30vw;
+        left: 5%;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        left: 10px;
+        top: 20px;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+        left: 20%;
+        top: 80px;
+    }
+
+    .content .btn {
+        width: 90%;
+        padding: 8px;
+    }
+
+    #next-btn {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .content {
+        top: 35vw;
+        left: 5%;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+        left: 10px;
+        top: 20px;
+    }
+
+    header h3 {
+        font-size: 1.25rem;
+        left: 15%;
+        top: 60px;
+    }
+
+    .content .btn {
+        width: 100%;
+        padding: 6px;
+    }
+
+    #next-btn {
+        margin-left: 10%;
+    }
+}
